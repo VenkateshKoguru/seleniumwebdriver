@@ -1,103 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-30T10:17:19 IST" name="Suite" finished-at="2025-03-30T10:17:35 IST" duration-ms="15971">
+  <suite started-at="2025-04-10T20:19:43 IST" name="Suite" finished-at="2025-04-10T20:19:43 IST" duration-ms="64">
     <groups>
+      <group name="sanity">
+        <method signature="LoginTests.loginByEmail()[pri:1, instance:day44.LoginTests@5d7148e2]" name="loginByEmail" class="day44.LoginTests"/>
+        <method signature="LoginTests.loginByFaceBook()[pri:2, instance:day44.LoginTests@5d7148e2]" name="loginByFaceBook" class="day44.LoginTests"/>
+        <method signature="LoginTests.loginBytwitter()[pri:3, instance:day44.LoginTests@5d7148e2]" name="loginBytwitter" class="day44.LoginTests"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-03-30T10:17:19 IST" name="Test" finished-at="2025-03-30T10:17:35 IST" duration-ms="15971">
-      <class name="Day46.OrangeHRM">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Day46.OrangeHRM@1151e434]" started-at="2025-03-30T10:17:20 IST" name="setup" finished-at="2025-03-30T10:17:35 IST" duration-ms="15447" status="PASS">
+    <test started-at="2025-04-10T20:19:43 IST" name="Test" finished-at="2025-04-10T20:19:43 IST" duration-ms="64">
+      <class name="day44.LoginTests">
+        <test-method signature="loginByEmail()[pri:1, instance:day44.LoginTests@5d7148e2]" started-at="2025-04-10T20:19:43 IST" name="loginByEmail" finished-at="2025-04-10T20:19:43 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testLogo()[pri:1, instance:Day46.OrangeHRM@1151e434]" started-at="2025-03-30T10:17:35 IST" name="testLogo" finished-at="2025-03-30T10:17:35 IST" duration-ms="61" status="PASS">
+        </test-method> <!-- loginByEmail -->
+        <test-method signature="loginByFaceBook()[pri:2, instance:day44.LoginTests@5d7148e2]" started-at="2025-04-10T20:19:43 IST" name="loginByFaceBook" finished-at="2025-04-10T20:19:43 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogo -->
-        <test-method signature="testAppUrl()[pri:2, instance:Day46.OrangeHRM@1151e434]" started-at="2025-03-30T10:17:35 IST" name="testAppUrl" finished-at="2025-03-30T10:17:35 IST" duration-ms="10" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://opensource-demo.orangehrmlive.com/] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at Day46.OrangeHRM.testAppUrl(OrangeHRM.java:38)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- loginByFaceBook -->
+        <test-method signature="loginBytwitter()[pri:3, instance:day44.LoginTests@5d7148e2]" started-at="2025-04-10T20:19:43 IST" name="loginBytwitter" finished-at="2025-04-10T20:19:43 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAppUrl -->
-        <test-method signature="testHomePageTitle()[pri:3, instance:Day46.OrangeHRM@1151e434]" started-at="2025-03-30T10:17:35 IST" name="testHomePageTitle" finished-at="2025-03-30T10:17:35 IST" depends-on-methods="Day46.OrangeHRM.testAppUrl" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method OrangeHRM.testHomePageTitle()[pri:3, instance:Day46.OrangeHRM@1151e434] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method OrangeHRM.testHomePageTitle()[pri:3, instance:Day46.OrangeHRM@1151e434] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testHomePageTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Day46.OrangeHRM@1151e434]" started-at="2025-03-30T10:17:35 IST" name="tearDown" finished-at="2025-03-30T10:17:35 IST" duration-ms="144" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Day46.OrangeHRM -->
+        </test-method> <!-- loginBytwitter -->
+      </class> <!-- day44.LoginTests -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
